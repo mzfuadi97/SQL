@@ -70,3 +70,19 @@ WHERE
         FROM
             orders_2
     );
+-- Menghitung total unik customers yang transaksi di quarter_2
+SELECT COUNT(DISTINCT customerID) as total_customers FROM orders_2;
+
+
+SELECT
+    "1" AS quarter,
+    (COUNT(DISTINCT customerID) * 100) / 25 AS Q2
+FROM
+    orders_2
+WHERE
+    customerID IN(
+        SELECT
+            DISTINCT customerID
+        FROM
+            orders_2
+    );
