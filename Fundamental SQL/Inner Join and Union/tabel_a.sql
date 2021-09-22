@@ -1,6 +1,6 @@
 USE dqlab1;
 
-CREATE TABLE IF NOT EXISTS tabel_a (
+CREATE TABLE tabel_a (
     `kode_transaksi` VARCHAR(16) CHARACTER SET utf8,
     `kode_pelanggan` VARCHAR(16) CHARACTER SET utf8,
     `no_urut` INT,

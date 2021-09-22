@@ -1,6 +1,6 @@
 USE dqlab1;
 
-CREATE TABLE IF NOT EXISTS suppliers (
+CREATE TABLE  suppliers (
     `SupplierID` INT,
     `ContactName` VARCHAR(13) CHARACTER SET utf8,
     `SupplierName` VARCHAR(16) CHARACTER SET utf8,
